@@ -1,0 +1,192 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{98C3BB93-67DC-4C1E-83C5-B21F3E97A1B0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>auto_gallery</RootNamespace>
+    <AssemblyName>auto_gallery</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FrmRandevuListesi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRandevuListesi.Designer.cs">
+      <DependentUpon>FrmRandevuListesi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Graphic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Graphic.Designer.cs">
+      <DependentUpon>Graphic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManagerGiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManagerGiris.Designer.cs">
+      <DependentUpon>ManagerGiris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClientGiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClientGiris.Designer.cs">
+      <DependentUpon>ClientGiris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClientPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClientPanel.Designer.cs">
+      <DependentUpon>ClientPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDuyurular.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDuyurular.Designer.cs">
+      <DependentUpon>FrmDuyurular.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Giris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Giris.Designer.cs">
+      <DependentUpon>Giris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManagerPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManagerPanel.Designer.cs">
+      <DependentUpon>ManagerPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MAracPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MAracPanel.Designer.cs">
+      <DependentUpon>MAracPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MCalisanPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MCalisanPanel.Designer.cs">
+      <DependentUpon>MCalisanPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SaticiGiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SaticiGiris.Designer.cs">
+      <DependentUpon>SaticiGiris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SaticiPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SaticiPanel.Designer.cs">
+      <DependentUpon>SaticiPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sqlbaglantisi.cs" />
+    <Compile Include="UyeKayit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UyeKayit.Designer.cs">
+      <DependentUpon>UyeKayit.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ClientGiris.resx">
+      <DependentUpon>ClientGiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientPanel.resx">
+      <DependentUpon>ClientPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDuyurular.resx">
+      <DependentUpon>FrmDuyurular.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRandevuListesi.resx">
+      <DependentUpon>FrmRandevuListesi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Giris.resx">
+      <DependentUpon>Giris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Graphic.resx">
+      <DependentUpon>Graphic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManagerGiris.resx">
+      <DependentUpon>ManagerGiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManagerPanel.resx">
+      <DependentUpon>ManagerPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MAracPanel.resx">
+      <DependentUpon>MAracPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MCalisanPanel.resx">
+      <DependentUpon>MCalisanPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="SaticiGiris.resx">
+      <DependentUpon>SaticiGiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SaticiPanel.resx">
+      <DependentUpon>SaticiPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UyeKayit.resx">
+      <DependentUpon>UyeKayit.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
