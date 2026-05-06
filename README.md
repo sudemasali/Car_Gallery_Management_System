@@ -105,5 +105,5 @@ The application uses SQL Server to store:
 
 ## Author
 
-Sude Maşalı
+Sude Maşalı &
 Batuhan Çelikbaş
